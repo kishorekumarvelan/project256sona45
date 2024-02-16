@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="360.css">
+  <link rel="stylesheet" href="riyatz.css">
+  <link rel="stylesheet" href="bootstrap.css">
+
+</head>
+<body>
+  
+  <nav class="juju">
+    <ul class="list">
+      <li>
+        <div id="sct">
+          <h1 style="color:whitesmoke;" style="font-weight: bold;">
+                <span class="fa-solid fa-code" aria-hidden="true"></span>
+                <span>ROOM SEARCH PAGE</span>
+              </a>
+            </h1>
+        </div>
+      </li>
+      <li><a href="kishore.html" class="link" style="color: white;"><b>Home</b></a></li>
+      <li><a href="" class="link" style="color: white;"><b>Contact Us</b></a></li>
+      <li><a href="" class="link" style="color: white;"><b>About</b></a></li>
+      
+    </ul>
+    <canvas id="canvas"></canvas>
+
+    
+
+    
+   
+  </nav>
+  <div class="landing" id="landing-container">
+
+   
+    <script>
+        const landingContainer = document.getElementById('landing-container');
+        const images = [
+          'lone-tree.jpg',
+          'beautiful-sunrise-wat-phra-that-pha-son-kaew-temple-khao-kho-phetchabun-thailand.jpg',
+          'small-house-built-peaceful-green-hill-high-up-mountains.jpg',
+         
+
+        ];
+      
+        let currentImageIndex = 0;
+      
+        function changeBackgroundImage() {
+          landingContainer.style.backgroundImage = `url(${images[currentImageIndex]})`;
+          currentImageIndex = (currentImageIndex + 1) % images.length;
+        }
+      
+        // Initial background image change
+        changeBackgroundImage();
+      
+        // Change background image every 5 seconds
+        setInterval(changeBackgroundImage, 3000);
+      </script>
+    
+</div>
+  
+  
+</body>
+</html>
